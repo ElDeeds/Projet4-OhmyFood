@@ -1,0 +1,12 @@
+@media (max-width: 599px) {
+.footer__container{
+    background-color: #343636;
+}
+.footer__logo{
+    font-family: Shrikhand, cursive;
+    @include text-footer
+}
+.footer__text{
+    @include text-footer
+}
+}

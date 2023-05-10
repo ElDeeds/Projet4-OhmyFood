@@ -1,0 +1,10 @@
+@media (max-width: 599px) {
+    .header__logo{
+        @include text-centered;
+        font-size: 30px;
+        font-family: 'Shrikhand', cursive;
+    }
+    .location__text{
+        @include text-centered;
+    }
+}
