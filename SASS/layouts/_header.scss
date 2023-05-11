@@ -8,6 +8,13 @@
     }
     .location__text{
         @include text-centered;
+        padding: 3%;
+        font-size: 14px;
+        background: rgb(230,230,230);
+        background: linear-gradient(0deg, rgba(230,230,230,1) 0%, rgba(230,230,230,1) 86%, rgba(210,210,210,1) 100%);
+            .fa-location-dot{
+                margin-right: 10px;
+            }
     }
     .explore{
         display: flex;
@@ -21,6 +28,6 @@
         text-align: center;
     }
     .explore__btn{
-        @include btn-explor;
+        @include btn-explore;
     }
 }

@@ -18,6 +18,13 @@ body {
   .location__text {
     display: flex;
     justify-content: center;
+    padding: 3%;
+    font-size: 14px;
+    background: rgb(230, 230, 230);
+    background: linear-gradient(0deg, rgb(230, 230, 230) 0%, rgb(230, 230, 230) 86%, rgb(210, 210, 210) 100%);
+  }
+  .location__text .fa-location-dot {
+    margin-right: 10px;
   }
   .explore {
     display: flex;
