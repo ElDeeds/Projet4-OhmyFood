@@ -2,6 +2,12 @@
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+/* Header*/
 @media (max-width: 599px) {
   .header__logo {
     display: flex;
@@ -13,7 +19,29 @@
     display: flex;
     justify-content: center;
   }
+  .explore {
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+  }
+  .explore__title {
+    text-align: center;
+  }
+  .explore__text {
+    text-align: center;
+  }
+  .explore__btn {
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 10px 20px 10px 20px;
+    background: linear-gradient(#FF79DA, #9356DC);
+    border-radius: 25px;
+    border: 0px none;
+    color: white;
+  }
 }
+/*Cards*/
 @media (max-width: 599px) {
   .card {
     width: auto;
@@ -37,6 +65,7 @@
     background-color: white;
   }
 }
+/* Footer */
 @media (max-width: 599px) {
   .footer__container {
     background-color: #343636;

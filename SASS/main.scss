@@ -2,6 +2,11 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
 @import "./utils/variables";
 @import "./layouts/header";
 @import "./components/card";
