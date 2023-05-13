@@ -1,6 +1,8 @@
+@use "../utils/variables" as *;
+@use "../utils/mixin" as *;
 /* Header*/
 
-@media (max-width: 599px) {
+
     .header__logo{
         @include text-centered;
         font-size: 30px;
@@ -19,7 +21,8 @@
     .explore{
         display: flex;
         flex-direction: column;
-        background-color: #f0f0f0,
+        background-color: #F6F6F6;
+        
     }
     .explore__title{
         text-align: center;
@@ -30,4 +33,3 @@
     .explore__btn{
         @include btn-explore;
     }
-}

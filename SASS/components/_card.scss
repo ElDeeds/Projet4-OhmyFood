@@ -1,6 +1,8 @@
+@use "../utils/variables" as *;
+@use "../utils/mixin" as *;
 /*Cards*/
 
-@media (max-width: 599px) {
+
     .card{
         @include card;
         &__img{
@@ -19,5 +21,5 @@
     .card__title{
         @include card;
     }
-}
+
 

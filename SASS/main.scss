@@ -1,13 +1,10 @@
-* {
-    font-family: 'Roboto', sans-serif;
-}
+@use "./base/base";
 
-body {
-    margin-left: 0px;
-    margin-right: 0px;
-}
+@use "./utils/variables";
+@use "./utils/mixin";
 
-@import "./utils/variables";
-@import "./layouts/header";
-@import "./components/card";
-@import "./layouts/footer";
+@use "./layouts/header";
+@use "./layouts/footer";
+@use "./layouts/function";
+
+@use "./components/card";

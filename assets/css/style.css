@@ -1,0 +1,141 @@
+* {
+  font-family: Roboto, Sans serif;
+}
+
+body {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+/* Header*/
+.header__logo {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-family: "Shrikhand", cursive;
+}
+
+.location__text {
+  display: flex;
+  justify-content: center;
+  padding: 3%;
+  font-size: 14px;
+  background: rgb(230, 230, 230);
+  background: linear-gradient(0deg, rgb(230, 230, 230) 0%, rgb(230, 230, 230) 86%, rgb(210, 210, 210) 100%);
+}
+.location__text .fa-location-dot {
+  margin-right: 10px;
+}
+
+.explore {
+  display: flex;
+  flex-direction: column;
+  background-color: #F6F6F6;
+}
+
+.explore__title {
+  text-align: center;
+}
+
+.explore__text {
+  text-align: center;
+}
+
+.explore__btn {
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 10px 20px 10px 20px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 25px;
+  border: 0px none;
+  color: white;
+}
+
+/* Footer */
+.footer {
+  background-color: #343636;
+  color: white;
+}
+.footer__logo {
+  font-family: Shrikhand, cursive;
+}
+
+/* Functions */
+.function__title {
+  margin-left: 5%;
+}
+
+.function__step {
+  list-style-type: none;
+  counter-reset: Listcount;
+  margin: auto;
+  padding: 30px 20px 30px 30px;
+  background-color: #F6F6F6;
+  margin-bottom: 5%;
+  margin-right: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+}
+.function__step__text {
+  font-weight: 500;
+  font-size: 16px;
+}
+.function__step.function__step::before {
+  counter-increment: ListCount;
+  content: counter(ListCount) " ";
+  position: absolute;
+  background: #9356DC;
+  color: #ffffff;
+  height: 24px;
+  width: 24px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 30px;
+}
+
+li.function__step {
+  margin-right: 5%;
+}
+
+.fa-list-ul {
+  margin-right: 30px;
+}
+
+.fa-mobile-screen-button {
+  margin-right: 30px;
+}
+
+.fa-store {
+  margin-right: 30px;
+}
+
+/*Cards*/
+.card {
+  width: auto;
+  background-color: white;
+}
+.card__img {
+  width: 95%;
+  height: 200px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.restaurants {
+  background-color: #EDEDED;
+}
+
+.card__content {
+  width: auto;
+  background-color: white;
+}
+
+.card__title {
+  width: auto;
+  background-color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

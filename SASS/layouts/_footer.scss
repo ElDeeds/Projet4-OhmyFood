@@ -1,14 +1,13 @@
+@use "../utils/variables" as *;
+@use "../utils/mixin" as *;
+
 /* Footer */
 
-@media (max-width: 599px) {
-.footer__container{
+.footer {
     background-color: #343636;
-}
-.footer__logo{
-    font-family: Shrikhand, cursive;
-    @include text-footer
-}
-.footer__text{
-    @include text-footer
-}
+    @include text-footer;
+
+    &__logo {
+        font-family: Shrikhand, cursive;
+    }
 }
