@@ -17,7 +17,7 @@
 
     &.function__step::before {
         counter-increment: ListCount ;
-        content: counter(ListCount) " ";
+        content: Counter(ListCount);
         position: absolute;
         background: $color-primary;
         color: #ffffff;

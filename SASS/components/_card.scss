@@ -3,23 +3,6 @@
 /*Cards*/
 
 
-    .card{
-        @include card;
-        &__img{
-            width: 95%;
-            height: 200px;
-            border-top-left-radius: 20px ;
-            border-top-right-radius: 20px;
-        }}
-
-    .restaurants{
-        background-color: #EDEDED;
-    }
-    .card__content{
-        @include card;
-    }
-    .card__title{
-        @include card;
-    }
+    
 
 

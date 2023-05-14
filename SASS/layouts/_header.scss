@@ -10,8 +10,8 @@
     }
     .location__text{
         @include text-centered;
-        padding: 3%;
-        font-size: 14px;
+        padding: 5%;
+        font-size: 16px;
         background: rgb(230,230,230);
         background: linear-gradient(0deg, rgba(230,230,230,1) 0%, rgba(230,230,230,1) 86%, rgba(210,210,210,1) 100%);
             .fa-location-dot{
@@ -26,9 +26,15 @@
     }
     .explore__title{
         text-align: center;
+        font-family: Roboto, Sans Serif;
+        font-weight: 700;
+        padding-left: 8%;
+        padding-right: 8%;
     }
     .explore__text{
         text-align: center;
+        font-family: Roboto, Sans Serif;
+        font-weight: 300;
     }
     .explore__btn{
         @include btn-explore;

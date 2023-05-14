@@ -4,10 +4,27 @@
 /* Footer */
 
 .footer {
+    height: 100%;
+    width: 100%;
     background-color: #343636;
     @include text-footer;
 
     &__logo {
+        display: flex;
         font-family: Shrikhand, cursive;
+        margin-left: 8%;
+        padding-top: 5%;
     }
+
+    &__list {
+        list-style-type: none;
+        line-height: 1.5;
+    }
+}
+
+.fa-utensils{
+    margin-right: 3%;
+}
+.fa-handshake-angle{
+    margin-right: 1.5%;
 }
