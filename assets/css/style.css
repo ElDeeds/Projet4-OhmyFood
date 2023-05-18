@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   font-family: Roboto, Sans serif;
 }
@@ -57,6 +58,13 @@ body {
   color: white;
   font-size: 16px;
   font-weight: 400;
+  text-decoration: none;
+  transition: filter 0.4s;
+  transition: box-shadow 0.4s;
+}
+.explore__btn:hover {
+  filter: brightness(1.1);
+  box-shadow: -2px -25px 20px -20px rgba(0, 0, 0, 0.2), 25px 0px 20px -20px rgba(0, 0, 0, 0.2), 0px 25px 20px -20px rgba(0, 0, 0, 0.2), -25px 0px 20px -20px rgba(0, 0, 0, 0.2);
 }
 
 /* Footer */
@@ -152,10 +160,10 @@ li.function__step {
   width: auto;
 }
 
-.card__heart {
+.fa-stack {
   width: auto;
   position: absolute;
-  right: 15px;
+  right: 50px;
   bottom: 23px;
 }
 
@@ -189,7 +197,7 @@ a.card .card__content {
 a.card .card__img {
   width: 100%;
   object-fit: cover;
-  height: 200px;
+  height: 150px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
@@ -205,6 +213,42 @@ h3.card__title {
   padding-top: 3%;
 }
 
+.card__imgbtn {
+  position: relative;
+}
+.card__imgbtn .card__btn {
+  position: absolute;
+  left: 77%;
+  top: 8%;
+  background-color: #99E2D0;
+  color: #278870;
+  border: none;
+  border-radius: 3px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-right: 3%;
+  padding-left: 3%;
+}
+
 /*Cards*/
+.fa-empty {
+  display: inline-block; /* Masquer l'icône fa-empty par défaut */
+}
+
+.fa-gradient {
+  display: none; /* Masquer l'icône fa-gradient par défaut */
+}
+
+.card:hover .fa-empty {
+  display: none; /* Masquer l'icône fa-empty lors du survol */
+}
+
+.card:hover .fa-gradient {
+  display: inline-block; /* Afficher l'icône fa-gradient lors du survol */
+  color: -webkit-linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  transition: 400ms;
+  -webkit-text-fill-color: purple;
+}
 
 /*# sourceMappingURL=style.css.map */

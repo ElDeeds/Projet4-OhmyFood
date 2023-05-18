@@ -19,10 +19,10 @@
     width: auto;
 }
 
-.card__heart{
+.fa-stack{
     width: auto;
     position: absolute;
-    right: 15px;
+    right: 50px;
     bottom: 23px;
 }
 
@@ -32,12 +32,17 @@ a.card {
     text-decoration: none;
     margin-bottom: 5%;
     width: 90%;
-
 }
-
-
 
 h3.card__title{
     padding-top: 3%;
 }
+
+.card__imgbtn{
+    position: relative;
+    @include btn-nouveau;
+}
+
+
+
 

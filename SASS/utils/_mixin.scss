@@ -29,7 +29,7 @@
     &__img{
         width: 100%;
         object-fit: cover;
-        height: 200px;
+        height: 150px;
         border-top-left-radius: 20px ;
         border-top-right-radius: 20px;
 }}
@@ -57,6 +57,16 @@ span.card__text{
     color: white;
     font-size: 16px;
     font-weight: 400;
+    text-decoration: none;
+    transition: filter 0.4s;
+    transition: box-shadow 0.4s;
+    &:hover{
+        filter: brightness(1.1);
+        box-shadow: -2px -25px 20px -20px rgba(0,0,0,0.2),
+        25px 0px 20px -20px rgba(0,0,0,0.2),
+        0px 25px 20px -20px rgba(0,0,0,0.2),
+        -25px 0px 20px -20px rgba(0,0,0,0.2);
+    }
 }
 
 @mixin btn-step{
@@ -67,4 +77,20 @@ span.card__text{
     margin-right:10px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
+}
+
+@mixin btn-nouveau{
+    .card__btn{
+        position: absolute;
+        left:77%;
+        top: 8%;
+        background-color: $color-terciary;
+        color: darken($color-terciary, $amount: 40);
+        border: none;
+        border-radius: 3px;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        padding-right: 3%;
+        padding-left: 3%;
+    }
 }
