@@ -2,26 +2,19 @@
 @use "../utils/mixin" as *;
 /*Cards*/
 
-
-
-    .fa-empty {
-      display: inline-block; /* Masquer l'icône fa-empty par défaut */
-    }
     
     .fa-gradient {
-      display: none; /* Masquer l'icône fa-gradient par défaut */
-    }
-    
-    .card:hover .fa-empty {
-      display: none; /* Masquer l'icône fa-empty lors du survol */
-    }
-    
-    .card:hover .fa-gradient {
-      display: inline-block; /* Afficher l'icône fa-gradient lors du survol */
-      color: -webkit-linear-gradient($color-primary, $color-secondary);
+      opacity: 0; 
+      background-image: linear-gradient($color-primary, $color-secondary);
       background-clip: text;
-      transition: 400ms;
-      -webkit-text-fill-color: purple;
+      -webkit-background-clip: text;
+      color: transparent;
+      width: 32px;
+      transition: opacity 0.2s ease-out;
+    }
+    
+    .fa-gradient:hover  {
+      opacity: 1; 
     }
     
 

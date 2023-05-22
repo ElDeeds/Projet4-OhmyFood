@@ -8,7 +8,11 @@
     background-color: #EDEDED;
     &__title{
         margin-left: 5%;
-        padding-top: 10%
+        padding-top: 10%;
+        @media (min-width: 767.98px){
+            padding-top:3%;
+            padding-bottom:1%;
+        }
     }
 }
 
@@ -17,13 +21,22 @@
     flex-direction: column;
     align-items: center;
     width: auto;
+    @media (min-width: 767.98px){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
 }
 
-.fa-stack{
+.card__icon{
     width: auto;
     position: absolute;
     right: 50px;
-    bottom: 23px;
+    bottom: 20px;
+    @media (min-width: 767.98px){
+        bottom: 25px
+    }
 }
 
 a.card {
@@ -32,6 +45,11 @@ a.card {
     text-decoration: none;
     margin-bottom: 5%;
     width: 90%;
+    @media (min-width: 767.98px){
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+    }
 }
 
 h3.card__title{

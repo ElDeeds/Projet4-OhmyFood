@@ -16,10 +16,13 @@
 
 <body>
     <main>
+        
         <header>
         <span class="header__logo">ohmyfood</span>
         </header>
-       
+        <div class="loader">
+            <div class="loader__anim"></div>
+            </div>
             <div class="location">
                     <span class="location__text"><i class="fa-sharp fa-solid fa-location-dot"></i>
                     Paris, Belleville</span>
@@ -32,15 +35,15 @@
             <section class="function">
                     <h2 class="function__title">Fonctionnement</h2>
                     <ol class="function__list">
-                        <li class="function__step"><i class="fa-sharp fa-solid fa-mobile-screen-button" style="color: #c0c0c0;"></i><span class="function__text">Choisissez un restaurant</span></li>
-                        <li class="function__step"><i class="fa-sharp fa-solid fa-list-ul" style="color: #c0c0c0;"></i><span class="function__text">Composez votre menu</span></li>
-                        <li class="function__step"><i class="fa-sharp fa-solid fa-store" style="color: #9356DC;"></i><span class="function__text">Dégustez au restaurant</span></li>
+                        <li class="function__step"><i class="fa-sharp fa-solid fa-mobile-screen-button"></i><span class="function__text">Choisissez un restaurant</span></li>
+                        <li class="function__step"><i class="fa-sharp fa-solid fa-list-ul"></i><span class="function__text">Composez votre menu</span></li>
+                        <li class="function__step"><i class="fa-sharp fa-solid fa-store"></i><span class="function__text">Dégustez au restaurant</span></li>
                     </ol>
             </section>
             <section class="restaurants">
                     <h2 class="restaurants__title">Restaurants</h2>
                 <div class="cards">
-                    <a class="card" href="#/">
+                    <a class="card" href="./SASS/pages/_palette-du-gout.scss">
                         <div class="card__imgbtn">
                         <img class="card__img" src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
                         <button class="card__btn">Nouveau</button>
@@ -49,7 +52,7 @@
                             <h3 class="card__title">La palette du goût</h3>
                             <span class="card__text">Ménilmontant</span>
                         
-                        <span class="fa-stack"><i  class="fa-regular fa-heart fa-2x fa-stack-2x fa-empty"  style="color: black;"></i><i class="fa-solid fa-heart fa-2x fa-stack-2x fa-gradient"></i></span>
+                        <span class="fa-stack card__icon"><i  class="fa-regular fa-heart fa-2x fa-stack-2x fa-empty"></i><i class="fa-solid fa-heart fa-2x fa-stack-2x fa-gradient"></i></span>
                     </div>
                     </a>
                     <a class="card" href="#/">
@@ -61,7 +64,7 @@
                             <h3 class="card__title">La note enchantée</h3>
                             <span class="card__text">Charonne</span>
                        
-                            <span class="fa-stack"><i  class="fa-regular fa-heart fa-2x fa-stack-2x fa-empty"  style="color: black;"></i><i class="fa-solid fa-heart fa-2x fa-stack-2x fa-gradient"></i></span>
+                            <span class="fa-stack card__icon"><i  class="fa-regular fa-heart fa-2x fa-stack-2x fa-empty"></i><i class="fa-solid fa-heart fa-2x fa-stack-2x fa-gradient"></i></span>
                     </div>
                     </a>
                     <a class="card" href="#/">
@@ -70,7 +73,7 @@
                             <h3 class="card__title">À la française</h3>
                             <span class="card__text">Cité rouge</span>
                       
-                            <span class="fa-stack"><i  class="fa-regular fa-heart fa-2x fa-stack-2x fa-empty"  style="color: black;"></i><i class="fa-solid fa-heart fa-2x fa-stack-2x fa-gradient"></i></span>
+                            <span class="fa-stack card__icon"><i  class="fa-regular fa-heart fa-2x fa-stack-2x fa-empty"></i><i class="fa-solid fa-heart fa-2x fa-stack-2x fa-gradient"></i></span>
                     </div>
                     </a>
                     <a class="card" href="#/">
@@ -79,7 +82,7 @@
                             <h3 class="card__title">Le délice des sens</h3>
                             <span class="card__text">Folie-Méricourt</span>
                         
-                            <span class="fa-stack"><i  class="fa-regular fa-heart fa-2x fa-stack-2x fa-empty"  style="color: black;"></i><i class="fa-solid fa-heart fa-2x fa-stack-2x fa-gradient"></i></span>
+                            <span class="fa-stack card__icon"><i  class="fa-regular fa-heart fa-2x fa-stack-2x fa-empty"></i><i class="fa-solid fa-heart fa-2x fa-stack-2x fa-gradient"></i></span>
                     </div>
                     </a>
                 </div>
@@ -89,8 +92,8 @@
     <div class="footer">
         <span class="footer__logo">ohmyfood</span>
         <ul class="footer__list">
-            <li class="footer__text"><i class="fa-sharp fa-solid fa-utensils" style="color: white;"></i>Proposer un restaurant</li>
-            <li class="footer__text"><i class="fa-sharp fa-solid fa-handshake-angle" style="color: white;"></i>Devenir partenaire</li>
+            <li class="footer__text"><i class="fa-sharp fa-solid fa-utensils"></i>Proposer un restaurant</li>
+            <li class="footer__text"><i class="fa-sharp fa-solid fa-handshake-angle"></i>Devenir partenaire</li>
             <li class="footer__text">Mentions légales</li>
             <li class="footer__text">Contact</li>
         </ul>

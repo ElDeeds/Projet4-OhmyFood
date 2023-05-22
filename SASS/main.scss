@@ -5,7 +5,10 @@
 
 @use "./layouts/header";
 @use "./layouts/footer";
-@use "./layouts/function";
+@use "./layouts/fonctionnement";
 @use "./layouts/restaurants";
 
 @use "./components/card";
+@use "./components/loader";
+
+@use "./pages/palette-du-gout"

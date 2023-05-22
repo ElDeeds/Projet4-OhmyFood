@@ -8,23 +8,49 @@
     width: 100%;
     background-color: #343636;
     @include text-footer;
+    @media (min-width: 767.98px){
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+    }
 
     &__logo {
         display: flex;
         font-family: Shrikhand, cursive;
         margin-left: 8%;
         padding-top: 5%;
+        @media (min-width: 767.98px){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding:60px;
+            font-size: 20px;
+        }
     }
 
     &__list {
         list-style-type: none;
         line-height: 1.5;
+        @media (min-width: 767.98px){
+            display: flex;
+            padding-left: auto;
+        }
     }
-}
+
+    &__text{
+        display: flex;
+        @media (min-width: 767.98px){
+        justify-content: center;
+        align-items: center;
+        padding-left: 10px;
+    }
+}}
 
 .fa-utensils{
     margin-right: 15px;
+    color: white;
 }
 .fa-handshake-angle{
     margin-right: 8px;
+    color: white;
 }

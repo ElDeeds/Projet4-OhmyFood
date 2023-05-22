@@ -1,7 +1,14 @@
 @use "../utils/variables" as *;
 @use "../utils/mixin" as *;
 
-/* Functions */
+/* Fonctionnement */
+.function__list{
+    @media (min-width: 767.98px){
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
 .function__title{
     margin-left: 5%
 }
@@ -13,12 +20,16 @@
      &__text{
         font-weight: 500;
         font-size: 16px;
+        @media (min-width: 767.98px){
+            font-weight: bold;
+        }
      }
 
-    &.function__step::before {
-        counter-increment: ListCount ;
+    &__step::before {
+        counter-increment: ListCount  ;
         content: Counter(ListCount);
         position: absolute;
+        z-index: 1;
         background: $color-primary;
         color: #ffffff;
         height: 24px;
@@ -43,4 +54,12 @@ li.function__step{
 }
 .fa-store{
     margin-right:30px;
+}
+
+.fa-mobile-screen-button, .fa-list-ul{
+    color: #c0c0c0;
+}
+
+.fa-store{
+    color: #9356DC;
 }
