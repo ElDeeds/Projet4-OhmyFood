@@ -3,19 +3,19 @@
 /*Cards*/
 
     
-    .fa-gradient {
-      opacity: 0; 
-      background-image: linear-gradient($color-primary, $color-secondary);
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
-      width: 32px;
-      transition: opacity 0.2s ease-out;
-    }
-    
-    .fa-gradient:hover  {
-      opacity: 1; 
-    }
+.fa-gradient {
+  opacity: 0; 
+  background-image: linear-gradient($color-primary, $color-secondary);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  width: 40px;
+  transition: opacity 0.2s ease-out;
+}
+
+.fa-gradient:hover  {
+  opacity: 1; 
+}
     
 
 

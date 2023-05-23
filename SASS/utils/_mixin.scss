@@ -69,6 +69,30 @@ span.card__text{
     }
 }
 
+@mixin btn-explore{
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom:40px;
+    padding:15px 25px 15px 25px;
+    background: $color-primary;
+    background: linear-gradient(356deg, $color-primary 0%, $color-primary 0%, $color-secondary 100%);
+    border-radius: 30px;
+    border: 0px none;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: filter 0.4s;
+    transition: box-shadow 0.4s;
+    &:hover{
+        filter: brightness(1.1);
+        box-shadow: -2px -25px 20px -20px rgba(0,0,0,0.2),
+        25px 0px 20px -20px rgba(0,0,0,0.2),
+        0px 25px 20px -20px rgba(0,0,0,0.2),
+        -25px 0px 20px -20px rgba(0,0,0,0.2);
+    }
+}
+
 @mixin btn-step{
     margin: auto;
     padding:30px 20px 30px 30px;
@@ -79,6 +103,18 @@ span.card__text{
     border-radius: 20px;
     @media (min-width: 767.98px){
         width: 30%;
+    }
+}
+
+@mixin btn-menu-detail{
+    margin: auto;
+    padding:10px 10px 10px 20px;
+    background-color:white;
+    margin-bottom: 5%;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    @media (min-width: 767.98px){
+        width: 100%;
     }
 }
 
@@ -97,3 +133,54 @@ span.card__text{
         padding-left: 3%;
     }
 }
+
+@mixin restaurant-main-section{
+    .menu {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin-top: -50px;
+        padding-top: 25px;
+        background-color: #F6F6F6;
+        border-top-left-radius:40px;
+        border-top-right-radius: 40px;
+        @media (min-width: 767.98px) {
+        width: 80%;
+        left: 10%;
+        }
+        &__header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @media (min-width: 767.98px) {
+                justify-content: center;
+            }
+        }
+       
+        
+        &__title{
+            font-family: 'Shrikhand', cursive;
+            display: block;
+            font-size: 1.5em;
+            margin-block-start: 0.83em;
+            margin-block-end: 0.83em;
+            margin-inline-start: 20px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+            @media (min-width: 767.98px) {
+                padding-right: 30px;
+            }
+        }
+        .card__icon--menu{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            position: relative;
+            margin-right: 50px;   
+        }
+    
+    }}
+
