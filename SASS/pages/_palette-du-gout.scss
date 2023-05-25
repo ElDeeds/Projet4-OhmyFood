@@ -108,10 +108,10 @@
     }
     &__price{
         display: flex;
+        justify-content: center;
+        align-items: center;
         margin-left: auto;
         font-weight: bold;
-        margin-block-start: 4.2%;
-        margin-block-end: 0px;
 
     }
     &__check{
@@ -124,13 +124,13 @@
         transition-duration: .5s;
     } 
     }
+
     .menu-detail__container:hover .menu-detail__check {
     margin-right: -1rem;
 }
 
     .circle-color{
         color: white;
-
     }
 
 .explore__btn--commander{
@@ -139,4 +139,8 @@
     width: 15%;
     display: flex;
     justify-content: center;
+}
+
+.card__icon--menu{
+    width: 31px;
 }
