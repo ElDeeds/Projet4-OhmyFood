@@ -17,9 +17,10 @@
 
 .function__step{
     position: relative;
-    left: 1%;
     list-style-type: none;
     counter-reset: Listcount;
+    @media (min-width: 767.98px){
+    left: 1%;}
     @include btn-step;
      &__text{
         font-weight: 500;
