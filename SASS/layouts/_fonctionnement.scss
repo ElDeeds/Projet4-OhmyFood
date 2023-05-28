@@ -3,6 +3,8 @@
 
 /* Fonctionnement */
 .function__list{
+    list-style: none;
+    counter-reset: Listcount;
     @media (min-width: 767.98px){
         display: flex;
         justify-content: space-around;
@@ -14,6 +16,8 @@
 }
 
 .function__step{
+    position: relative;
+    left: 1%;
     list-style-type: none;
     counter-reset: Listcount;
     @include btn-step;
@@ -24,22 +28,35 @@
             font-weight: bold;
         }
      }
+}
 
-    &__step::before {
-        counter-increment: ListCount  ;
-        content: Counter(ListCount);
-        position: absolute;
-        z-index: 1;
-        background: $color-primary;
-        color: #ffffff;
-        height: 24px;
-        width: 24px;
-        border-radius: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        left: 30px;
-}}
+.function__list .function__step::before {
+    counter-increment: Listcount;
+    content: counter(Listcount);
+    position: absolute;
+    z-index: 1;
+    background: $color-primary;
+    color: #ffffff;
+    height: 24px;
+    width: 24px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -10px;
+}
+
+li.function__step:nth-child(1) {
+    counter-reset: Listcount 0; 
+  }
+  
+  li.function__step:nth-child(2) {
+    counter-reset: Listcount 1; 
+  }
+  
+  li.function__step:nth-child(3) {
+    counter-reset: Listcount 2; 
+  }
 
 li.function__step{
     margin-right:5%;

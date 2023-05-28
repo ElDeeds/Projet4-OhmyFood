@@ -1,8 +1,49 @@
 @use "../utils/variables" as *;
 @use "../utils/mixin" as *;
+@use "../utils/keyframes" as *;
 
 /* Restaurants */
 
+.header__restaurants{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header__logo--restaurants{
+    @include text-centered;
+    font-size: 28px;
+    font-family: 'Shrikhand', cursive;
+    margin: 10px;
+
+    @media (min-width: 767.98px) {
+        margin: 1.5%;
+        font-size: 40px;
+    }
+}
+
+.arrow-icon{
+    position: absolute;
+    left: 30px;
+    top: 25px;
+    @media (min-width: 767.98px) {
+    top: 35px;}
+    &:active{
+        color: black;
+    }
+}
+
+.top-page{
+    height: 250px;
+
+    &__img{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+
+    }
+}
 
 .restaurants{
     background-color: #EDEDED;
@@ -60,6 +101,46 @@ h3.card__title{
     position: relative;
     @include btn-nouveau;
 }
+
+
+@include restaurant-main-section;
+
+@include menu-card;
+
+@include check-card-animation;
+
+.explore__btn--commander{
+    @include btn-explore;
+    margin-top: 0px;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+.card__icon--menu{
+    width: 3px;
+}
+
+.menu-detail__container.menu-detail__animation {
+    animation: menu-card-appear  1s;
+    animation-fill-mode: both;
+  }
+
+  .menu-detail__container.menu-detail__animation:nth-child(1) {
+    animation-delay: 0.5s;
+  }
+  
+  .menu-detail__container.menu-detail__animation:nth-child(2) {
+    animation-delay: 0.7s;
+  }
+  
+  .menu-detail__container.menu-detail__animation:nth-child(3) {
+    animation-delay: 0.9s;
+  }
+
+  .menu-detail__container.menu-detail__animation:nth-child(4) {
+    animation-delay: 1.1s;
+  }
 
 
 
