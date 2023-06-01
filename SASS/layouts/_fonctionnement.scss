@@ -2,34 +2,36 @@
 @use "../utils/mixin" as *;
 
 /* Fonctionnement */
-.tuto__list{
-    list-style: none;
-    counter-reset: Listcount;
-    @media (min-width: 767.98px){
-        display: flex;
-        justify-content: space-around;
-    }
-}
 
-.tuto__title{
-    margin-left: 5%
-}
-
-.tuto__step{
-    position: relative;
-    list-style-type: none;
-    counter-reset: Listcount;
-    @media (min-width: 767.98px){
-    left: 1%;}
-    @include btn-step;
-     &__text{
-        font-weight: 500;
-        font-size: 16px;
-        @media (min-width: 767.98px){
-            font-weight: bold;
+.tuto{
+    &__list{
+        list-style: none;
+        counter-reset: Listcount;
+        @media (min-width: 983.98px){
+            display: flex;
+            justify-content: space-around;
         }
-     }
-}
+    }
+    &__title{
+        margin-left: 5%
+    }
+    &__step{
+        position: relative;
+        list-style-type: none;
+        counter-reset: Listcount;
+        @media (min-width: 983.98px){
+        left: 1%;}
+        @include btn-step;
+    &__text{
+    font-weight: 500;
+    font-size: 16px;
+    @media (min-width: 767.98px){
+        font-weight: bold;
+    }
+    }
+}}
+
+
 
 .tuto__list .tuto__step::before {
     counter-increment: Listcount;

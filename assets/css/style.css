@@ -171,17 +171,15 @@ body {
   list-style: none;
   counter-reset: Listcount;
 }
-@media (min-width: 767.98px) {
+@media (min-width: 983.98px) {
   .tuto__list {
     display: flex;
     justify-content: space-around;
   }
 }
-
 .tuto__title {
   margin-left: 5%;
 }
-
 .tuto__step {
   position: relative;
   list-style-type: none;
@@ -194,12 +192,12 @@ body {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
 }
-@media (min-width: 767.98px) {
+@media (min-width: 983.98px) {
   .tuto__step {
     left: 1%;
   }
 }
-@media (min-width: 767.98px) {
+@media (min-width: 983.98px) {
   .tuto__step {
     width: 30%;
   }
