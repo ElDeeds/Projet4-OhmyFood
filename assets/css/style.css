@@ -90,7 +90,7 @@ body {
   width: 100%;
   background-color: #343636;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
   justify-content: space-evenly;
   color: white;
 }
@@ -105,6 +105,8 @@ body {
   display: flex;
   font-family: Shrikhand, cursive;
   margin-right: 5%;
+  padding-top: 5%;
+  padding-left: 5%;
   align-items: center;
 }
 @media (min-width: 767.98px) {
@@ -456,6 +458,7 @@ h3.card__title {
   position: absolute;
   left: 30px;
   top: 40%;
+  color: black;
 }
 @media (min-width: 767.98px) {
   .arrow-icon {
@@ -568,8 +571,8 @@ h3.card__title {
   justify-content: center;
   width: 100%;
   padding-inline-start: 0px;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 @media (min-width: 767.98px) {
   .menu-detail__list {
@@ -586,7 +589,7 @@ h3.card__title {
   margin: auto;
   padding: 10px 10px 10px 20px;
   background-color: white;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
 }
