@@ -2,7 +2,7 @@
 @use "../utils/mixin" as *;
 
 /* Fonctionnement */
-.function__list{
+.tuto__list{
     list-style: none;
     counter-reset: Listcount;
     @media (min-width: 767.98px){
@@ -11,11 +11,11 @@
     }
 }
 
-.function__title{
+.tuto__title{
     margin-left: 5%
 }
 
-.function__step{
+.tuto__step{
     position: relative;
     list-style-type: none;
     counter-reset: Listcount;
@@ -31,7 +31,7 @@
      }
 }
 
-.function__list .function__step::before {
+.tuto__list .tuto__step::before {
     counter-increment: Listcount;
     content: counter(Listcount);
     position: absolute;
@@ -47,19 +47,19 @@
     left: -10px;
 }
 
-li.function__step:nth-child(1) {
+li.tuto__step:nth-child(1) {
     counter-reset: Listcount 0; 
   }
   
-  li.function__step:nth-child(2) {
+  li.tuto__step:nth-child(2) {
     counter-reset: Listcount 1; 
   }
   
-  li.function__step:nth-child(3) {
+  li.tuto__step:nth-child(3) {
     counter-reset: Listcount 2; 
   }
 
-li.function__step{
+li.tuto__step{
     margin-right:5%;
 }
 

@@ -6,7 +6,8 @@
 @use "./layouts/header";
 @use "./layouts/footer";
 @use "./layouts/fonctionnement";
-@use "./layouts/restaurants";
 
-@use "./components/card";
+@use "./components/heart";
 @use "./components/loader";
+
+@use "./pages/restaurants";
