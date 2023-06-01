@@ -564,11 +564,14 @@ h3.card__title {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  text-overflow: ellipsis;
   width: 100%;
 }
 .menu-detail__card-title {
   margin: 0px;
   margin-bottom: 2%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu-detail__step {
   display: flex;
@@ -583,8 +586,8 @@ h3.card__title {
   align-items: center;
   margin-left: auto;
   font-weight: bold;
-  z-index: 1;
   background-color: white;
+  position: relative;
 }
 .menu-detail__check {
   background-color: #99E2D0;
