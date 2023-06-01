@@ -17,11 +17,11 @@
   @keyframes s2 {to{transform: rotate(1turn)}}
   @keyframes loaderStop {
     0%{
-      opacity: 1;
+      opacity: 0.9;
       z-index: 2;
     }
     33% {
-      opacity: 1;
+      opacity: 0.9;
       z-index: 2;
     }
     99%{
