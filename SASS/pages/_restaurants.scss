@@ -26,9 +26,9 @@
 .arrow-icon{
     position: absolute;
     left: 30px;
-    top: 25px;
+    top: 40%;
     @media (min-width: 767.98px) {
-    top: 35px;}
+    top: 45%;}
     &:active{
         color: black;
     }
@@ -57,50 +57,7 @@
     }
 }
 
-.cards{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: auto;
-    @media (min-width: 767.98px){
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-}
 
-.card__icon{
-    width: auto;
-    position: absolute;
-    right: 50px;
-    bottom: 20px;
-    @media (min-width: 767.98px){
-        bottom: 25px
-    }
-}
-
-a.card {
-    @include card;
-    color: black;
-    text-decoration: none;
-    margin-bottom: 5%;
-    width: 90%;
-    @media (min-width: 767.98px){
-        display: flex;
-        flex-direction: column;
-        width: 40%;
-    }
-}
-
-h3.card__title{
-    padding-top: 3%;
-}
-
-.card__imgbtn{
-    position: relative;
-    @include btn-nouveau;
-}
 
 
 @include restaurant-main-section;

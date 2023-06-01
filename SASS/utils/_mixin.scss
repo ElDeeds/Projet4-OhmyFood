@@ -97,8 +97,8 @@ span.card__text{
 @mixin btn-nouveau{
     .card__btn{
         position: absolute;
-        left:77%;
         top: 8%;
+        right: 3%;
         background-color: $color-terciary;
         color: darken($color-terciary, $amount: 40);
         border: none;
@@ -212,7 +212,6 @@ span.card__text{
             font-weight: 500;
             font-size: 16px;
             white-space: nowrap;
-            text-overflow: ellipsis;
             overflow: hidden;
             text-overflow: ellipsis;
             width: 100%;
@@ -223,6 +222,12 @@ span.card__text{
                 margin-bottom: 2%;
                 overflow: hidden;
                 text-overflow: ellipsis;
+            }
+
+            &__text-container{
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
             }
             &__step{
                 display: flex;
